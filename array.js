@@ -77,8 +77,10 @@ let mmethod = mapMethod.map(r=>{
   console.log(r);
 });
 
-
-
-
+let filterMethod = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let ft = filterMethod.filter((item)=> {
+  return item % 2 == 0;
+});
+console.log(ft);
 
 
