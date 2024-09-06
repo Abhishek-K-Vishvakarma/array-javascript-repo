@@ -1,1 +1,1 @@
-# This is README.md file and he is initilizing five time
+# This is README.md file and he is initilizing five times
