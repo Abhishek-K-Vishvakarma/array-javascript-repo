@@ -83,4 +83,42 @@ let ft = filterMethod.filter((item)=> {
 });
 console.log(ft);
 
+let strr = "ABHISHEK VISHVAKARMA";
+let toUpper = strr.toUpperCase();
+console.log(toUpper);
 
+// How to get Index of lowercase character...
+let strr1 = ["apple", "APPLE", "MANGO", "lower", "orange", "UPPER", "NOWAY", ];
+for(let i = 0; i < strr1.length; i++){
+    if(strr1[i] == strr1[i].toLocaleLowerCase()){
+      console.log(strr1[i]);
+    }
+}
+
+// How to find index of word...
+
+let all1 = strr1.map((num,ind)=>{
+  return {num, ind};
+});
+console.log(all1);
+
+// How to get length of one by one char length...
+
+for(let i = 0; i < strr1.length; i++){
+  console.log(`Index ${i} == Length : ${strr1[i].length}`);
+}
+
+// How to get repition of char...
+
+let allstr = "Hello Abhishek Kumar Vishvakarma";
+let frequency = {};
+for(let char of allstr){
+  if(char !== ''){
+    if(frequency[char]){
+      frequency[char]++;
+    }else{
+      frequency[char] = 1;
+    }
+  }
+}
+console.log(frequency);
